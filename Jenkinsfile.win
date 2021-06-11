@@ -24,10 +24,9 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                 
-		// bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 
+                echo "Place holder for BUILD with JAVA_HOME as ${env.ANT_HOME}" 
 		
-		echo "Place holder for BUILD"
+		bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
         stage('Deploy') {
@@ -40,7 +39,7 @@ pipeline {
         }
  	stage('Test') {
             steps {
-		echo "Place holder for TESTING ${env.ANT_HOME}" 
+		echo "Place holder for TESTING with ANT_HOME as ${env.ANT_HOME} and JOB_NAME as ${env.JOB_NAME} " 
 		bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} test"
 		junit 'report/'
 		
