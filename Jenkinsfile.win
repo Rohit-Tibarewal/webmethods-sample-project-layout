@@ -1,6 +1,8 @@
 pipeline {
     agent any 
-
+  environment {
+        ANT_HOME='${env.SAG_HOME}/common/lib/ant'
+    }
     stages {
         stage('Build'){
             steps {
