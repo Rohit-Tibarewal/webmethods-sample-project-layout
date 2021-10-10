@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="TS_DevOpsDemoTest.xml">
+    <webMethodsTestCase description="Generate a Test Wizard" name="TC_helloSvc">
+        <service folder="DevOpsDemo.services" name="helloSvc">
+            <input>
+                <file filename="resources/test/data/SuccessInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/SuccessExpectedOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
