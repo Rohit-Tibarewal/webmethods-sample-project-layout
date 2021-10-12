@@ -2,6 +2,6 @@
 
 <IDataXMLCoder version="1.0">
   <record javaclass="com.wm.util.Values">
-    <value name="outStr">Hello RohitTib, have a nice Day!</value>
+    <value name="outStr">Hello RohitTib, have a nice Day!!!</value>
   </record>
 </IDataXMLCoder>
