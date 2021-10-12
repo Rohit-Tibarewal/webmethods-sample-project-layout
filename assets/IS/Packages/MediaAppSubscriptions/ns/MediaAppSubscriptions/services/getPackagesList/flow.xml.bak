@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">packDetails</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">1</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">MediaAppSubscriptions.docs:PackDetails</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">k</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/packDetails;4;1;MediaAppSubscriptions.docs:PackDetails">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">1234</value>
+      <value name="packname">Sports HD Pack</value>
+      <value name="description">All Sports HD Pack</value>
+      <value name="cost">800INR</value>
+      <value name="validity">1year</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">2345</value>
+      <value name="packname">News HD Pack</value>
+      <value name="description">All News HD Pack</value>
+      <value name="cost">500INR</value>
+      <value name="validity">1year</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">3456</value>
+      <value name="packname">English Movies HD Pack</value>
+      <value name="description">All English Movies HD Pack</value>
+      <value name="cost">600INR</value>
+      <value name="validity">1year</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">4567</value>
+      <value name="packname">Hindi Movies HD Pack</value>
+      <value name="description">All Hindi Movies HD Pack</value>
+      <value name="cost">700INR</value>
+      <value name="validity">1year</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">5678</value>
+      <value name="packname">Music HD Pack</value>
+      <value name="description">All Music HD Pack</value>
+      <value name="cost">500INR</value>
+      <value name="validity">1year</value>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="packId">6789</value>
+      <value name="packname">All HD Channels</value>
+      <value name="description">All HD Channels</value>
+      <value name="cost">2500INR</value>
+      <value name="validity">1year</value>
+    </record>
+  </array>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</FLOW>
