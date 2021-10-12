@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="DevRohitPkgTest">
+    <webMethodsTestCase name="SuccessCase">
+        <service folder="DevRohitPkg.services" name="firstSvc">
+            <input>
+                <file filename="resources/test/data/SuccessCaseInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/SuccessCaseOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
