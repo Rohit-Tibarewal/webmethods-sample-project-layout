@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="defAccess">false</value>
+  <record name="groups" javaclass="com.wm.util.Values">
+    <record name="Replicators" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Replicators</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/Replicators">local/Replicators</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigDisplayLogFile" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigDisplayLogFile</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigDisplayLogFile">local/WxConfigDisplayLogFile</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~RohitTestProject" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~RohitTestProject</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Internal" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Internal</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/Developers">local/Developers</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~ISPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~ISPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigRenameFiles" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigRenameFiles</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigRenameFiles">local/WxConfigRenameFiles</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~pq__sagdevopscicd_jsa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~pq__sagdevopscicd_jsa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="DeployerAdmin" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">DeployerAdmin</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~pq__sagdevopscicdrollback_t2ae" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~pq__sagdevopscicdrollback_t2ae</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigEncryptedValues" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigEncryptedValues</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigEncryptedValues">local/WxConfigEncryptedValues</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~pq__RohitRuntimeProject_ptb" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~pq__RohitRuntimeProject_ptb</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~pq__devopsdemo_loa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~pq__devopsdemo_loa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigCheckInterpolators" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigCheckInterpolators</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigCheckInterpolators">local/WxConfigCheckInterpolators</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~pq__sagdevopscicdrollback_t2ae" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~pq__sagdevopscicdrollback_t2ae</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigFileLocations" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigFileLocations</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigFileLocations">local/WxConfigFileLocations</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~ISJDBCConnPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~ISJDBCConnPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~pq__sagdevopscicdrollback_t2ae" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~pq__sagdevopscicdrollback_t2ae</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~pq__RohitRuntimeProject_ptb" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~pq__RohitRuntimeProject_ptb</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~pq__ISJDBCRepoProject_bob" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~pq__ISJDBCRepoProject_bob</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~pq__devopsdemo_loa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~pq__devopsdemo_loa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~ISJDBCConnPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~ISJDBCConnPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigLicense" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigLicense</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigLicense">local/WxConfigLicense</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~ISPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~ISPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~ISJDBCConnPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~ISJDBCConnPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Developers" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Developers</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/Developers">local/Developers</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~pq__sagdevopscicd_jsa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~pq__sagdevopscicd_jsa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~pq__ISJDBCRepoProject_bob" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~pq__ISJDBCRepoProject_bob</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~pq__sagdevopscicdrollback_t2ae" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~pq__sagdevopscicdrollback_t2ae</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~pq__sagdevopscicd_jsa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~pq__sagdevopscicd_jsa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~RohitTestProject" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~RohitTestProject</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~pq__ISJDBCRepoProject_bob" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~pq__ISJDBCRepoProject_bob</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~pq__sagdevopscicd_jsa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~pq__sagdevopscicd_jsa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigChangeEnvironment" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigChangeEnvironment</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigChangeEnvironment">local/WxConfigChangeEnvironment</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~pq__RohitRuntimeProject_ptb" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~pq__RohitRuntimeProject_ptb</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~pq__devopsdemo_loa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~pq__devopsdemo_loa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~pq__sagdevopscicdrollback_t2ae" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~pq__sagdevopscicdrollback_t2ae</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Anonymous" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Anonymous</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Everybody">local/Everybody</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigCreateFiles" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigCreateFiles</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigCreateFiles">local/WxConfigCreateFiles</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~pq__sagdevopscicd_jsa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~pq__sagdevopscicd_jsa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~ISPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~ISPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~pq__devopsdemo_loa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~pq__devopsdemo_loa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~pq__RohitRuntimeProject_ptb" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~pq__RohitRuntimeProject_ptb</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~RohitTestProject" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~RohitTestProject</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~pq__ISJDBCRepoProject_bob" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~pq__ISJDBCRepoProject_bob</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigEditFiles" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigEditFiles</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigEditFiles">local/WxConfigEditFiles</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~ISJDBCConnPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~ISJDBCConnPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~MAP~pq__RohitRuntimeProject_ptb" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~MAP~pq__RohitRuntimeProject_ptb</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Optimize" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Optimize</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/OptimizeUsers">local/OptimizeUsers</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~EXTRACT~RohitTestProject" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~RohitTestProject</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="MonitorAdministrators" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">MonitorAdministrators</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/MonitorAdministrators">local/MonitorAdministrators</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigTemplates" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigTemplates</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigTemplates">local/WxConfigTemplates</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigDeleteFiles" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigDeleteFiles</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigDeleteFiles">local/WxConfigDeleteFiles</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigUpdate" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigUpdate</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigUpdate">local/WxConfigUpdate</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~RohitTestProject" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~RohitTestProject</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Default" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Default</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Everybody">local/Everybody</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+        <value name="local/Anonymous">local/Anonymous</value>
+      </record>
+    </record>
+    <record name="~EXTRACT~pq__ISJDBCRepoProject_bob" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~EXTRACT~pq__ISJDBCRepoProject_bob</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="MonitorUsers" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">MonitorUsers</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/MonitorAdministrators">local/MonitorAdministrators</value>
+        <value name="local/MonitorUsers">local/MonitorUsers</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~ISPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~ISPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~VIEW~pq__devopsdemo_loa" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~VIEW~pq__devopsdemo_loa</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEFINE~ISJDBCConnPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEFINE~ISJDBCConnPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="~DEPLOY~ISPkgs" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">~DEPLOY~ISPkgs</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigShowValues" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigShowValues</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/WxConfigShowValues">local/WxConfigShowValues</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Administrators" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Administrators</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="WxConfigStandard" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">WxConfigStandard</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Developers">local/Developers</value>
+        <value name="local/WxConfigStandard">local/WxConfigStandard</value>
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="system/My webMethods Administrators@--@">system/My webMethods Administrators@--@</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+  </record>
+</Values>

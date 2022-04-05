@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+    <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="enabledEmissionChannels">3,4,5,6,7,8,10,11</value>
+        <value name="enabledSystemNotifierChannels">3,4,5,6,7,8,10,11</value>
+        <number name="systemNotifierSeverityCutoff" type="java.lang.Integer">3</number>
+        <number name="retentionPeriodInDays" type="java.lang.Integer">30</number>
+        <number name="certificateExpiryWarningInDays" type="java.lang.Integer">10</number>
+    </record>
+</IDataXMLCoder>
