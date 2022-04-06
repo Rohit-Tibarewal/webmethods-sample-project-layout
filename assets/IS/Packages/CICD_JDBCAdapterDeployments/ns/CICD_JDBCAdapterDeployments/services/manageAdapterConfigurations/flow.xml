@@ -3037,12 +3037,12 @@
 </MAPCOPY>
 </MAP>
 
-<BRANCH TIMEOUT="" SWITCH="/%existingConnectionDataList%">
+<BRANCH TIMEOUT="" LABELEXPRESSIONS="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
 
-<SEQUENCE NAME="/[^ ]/" TIMEOUT="" EXIT-ON="FAILURE">
+<SEQUENCE NAME="%existingConnectionDataList%!=null" TIMEOUT="" EXIT-ON="FAILURE">
   <COMMENT>Some connections exists</COMMENT>
 
   <!-- nodes -->
