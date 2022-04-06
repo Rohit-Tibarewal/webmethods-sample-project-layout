@@ -13,9 +13,9 @@
   <value name="listACL">Default</value>
   <value name="webappLoad">yes</value>
   <value name="name">CICD_JDBCAdapterDeployments</value>
-  <value name="build">build.10.7.195</value>
+  <value name="build">build.10.7.252</value>
   <null name="description"/>
-  <value name="time">2022-04-04 02:13:10 IST</value>
+  <value name="time">2022-04-07 00:34:30 IST</value>
   <value name="jvm_version">1.8.0_292</value>
   <value name="publisher">SAG-986B2F3</value>
   <value name="patch_nums"></value>
