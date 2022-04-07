@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="wm.server.packages:packageList" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="wm.server.packages:packageList" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="true">
   <COMMENT>Get the list of packages on this IS server</COMMENT>
 
   <!-- nodes -->
@@ -17,7 +17,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="pub.document:searchDocuments" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="pub.document:searchDocuments" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="true">
   <COMMENT>Search if the given package exists </COMMENT>
 
   <!-- nodes -->
@@ -505,7 +505,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="pub.list:sizeOfList" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="pub.list:sizeOfList" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="true">
   <COMMENT>Get the size of resulting list</COMMENT>
 
   <!-- nodes -->
@@ -1120,17 +1120,6 @@
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
         </array>
-        <value name="nillable">true</value>
-        <value name="form_qualified">false</value>
-        <value name="is_global">false</value>
-      </record>
-      <record javaclass="com.wm.util.Values">
-        <value name="node_type">unknown</value>
-        <value name="node_subtype">unknown</value>
-        <value name="is_public">false</value>
-        <value name="field_name">packageCount</value>
-        <value name="field_type">string</value>
-        <value name="field_dim">0</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
