@@ -1,0 +1,7 @@
+packageName,connectionAlias,transactionType,datasourceClass,serverName,user,password,databaseName,portNumber,networkProtocol,otherProperties,poolable,minimumPoolSize,maximumPoolSize,poolIncrementSize,blockingTimeout,expireTimeout,startupRetryCount,startupBackoffSecs
+Books,connection:Local105DBConn_NoTxn,LOCAL_TRANSACTION,com.mysql.jdbc.jdbc2.optional.MysqlDataSource,localhost,wmuser107,manage123,wmuser107,3306,,relaxAutoCommit=true;useLegacyDatetimeCode=false;useSSL=false;useTimezone=true;serverTimezone=UTC,TRUE,2,10,1,1000,1000,0,10
+Books,connection:SampleConnection2_NT,NO_TRANSACTION,com.mysql.jdbc.jdbc2.optional.MysqlDataSource,PRODPROD,PRODUSER,devdev,PRODDB,3330,,,TRUE,2,10,1,1000,1000,0,10
+Books,connection:SampleConnection3_XA,LOCAL_TRANSACTION,com.mysql.jdbc.jdbc2.optional.MysqlDataSource,PRODPROD,PRODUSER,devdev,PRODDB,33306,,,FALSE,2,10,1,1000,1000,0,10
+Books2,connection:SampleConnection4_NT,NO_TRANSACTION,com.mysql.jdbc.jdbc2.optional.MysqlDataSource,localhost,situser,manage12345,sitwm107,3306,,relaxAutoCommit=true;useLegacyDatetimeCode=false;useSSL=false;useTimezone=true;serverTimezone=UTC,TRUE,1,10,1,2000,2000,0,10
+Books2,connection:Sample_NoConn,NO_TRANSACTION,com.mysql.jdbc.jdbc2.optional.MysqlDataSource,localhost,wmuser107,manage123,wmuser107,3306,,relaxAutoCommit=true;useLegacyDatetimeCode=false;useSSL=false;useTimezone=true;serverTimezone=UTC,TRUE,1,10,1,2000,2000,0,10
+
