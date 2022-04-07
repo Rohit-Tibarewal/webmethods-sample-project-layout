@@ -357,7 +357,7 @@
 </MAP>
 </INVOKE>
 
-<RETRY TIMEOUT="" COUNT="240" BACK-OFF="5" LOOP-ON="SUCCESS">
+<RETRY TIMEOUT="" COUNT="5" BACK-OFF="5" LOOP-ON="SUCCESS">
   <COMMENT>Wait for 20minutes for package to be Enabled</COMMENT>
 
   <!-- nodes -->
