@@ -536,18 +536,6 @@
 </MAPSET>
 </MAP>
 
-<INVOKE TIMEOUT="" SERVICE="wm.server.packages:addDepend" VALIDATE-IN="$none" VALIDATE-OUT="$none">
-  <COMMENT>Add the current iteration&#39;s Adapter package dependency</COMMENT>
-
-  <!-- nodes -->
-
-<MAP MODE="INPUT">
-</MAP>
-
-<MAP MODE="OUTPUT">
-</MAP>
-</INVOKE>
-
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT>Map final output as Success</COMMENT>
   <MAPTARGET>
