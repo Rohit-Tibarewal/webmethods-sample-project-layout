@@ -179,6 +179,10 @@
 </MAP>
 </INVOKE>
 
+<RETRY TIMEOUT="" COUNT="5" BACK-OFF="2" LOOP-ON="SUCCESS">
+  <COMMENT></COMMENT>
+</RETRY>
+
 <MAP TIMEOUT="" MODE="STANDALONE">
   <COMMENT>Define Constants</COMMENT>
   <MAPTARGET>
@@ -3457,7 +3461,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="CICD_JDBCAdapterDeployments.utils.flow:checkIFPackageEnabled" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="CICD_JDBCAdapterDeployments.utils.flow:checkIfPackageDeployed" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT>Add the current iteration&#39;s Adapter package dependency</COMMENT>
 
   <!-- nodes -->
