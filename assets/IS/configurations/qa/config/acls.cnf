@@ -12,11 +12,9 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="Developers" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">Developers</value>
+    <record name="CICD_Test" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">CICD_Test</value>
       <record name="allow" javaclass="com.wm.util.Values">
-        <value name="local/Administrators">local/Administrators</value>
-        <value name="local/Developers">local/Developers</value>
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
@@ -26,14 +24,6 @@
       <record name="allow" javaclass="com.wm.util.Values">
         <value name="local/Administrators">local/Administrators</value>
         <value name="local/Developers">local/Developers</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="Administrators" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">Administrators</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-        <value name="local/Administrators">local/Administrators</value>
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
@@ -53,6 +43,23 @@
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
         <value name="local/Anonymous">local/Anonymous</value>
+      </record>
+    </record>
+    <record name="Developers" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Developers</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+        <value name="local/Developers">local/Developers</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="Administrators" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">Administrators</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+        <value name="local/Administrators">local/Administrators</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
   </record>
