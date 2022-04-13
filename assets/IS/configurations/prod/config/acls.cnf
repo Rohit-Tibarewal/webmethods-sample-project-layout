@@ -12,13 +12,6 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="CICD_Test" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">CICD_Test</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
     <record name="Internal" javaclass="com.wm.app.b2b.server.ACLGroup">
       <value name="name">Internal</value>
       <record name="allow" javaclass="com.wm.util.Values">
@@ -32,6 +25,20 @@
       <value name="name">Anonymous</value>
       <record name="allow" javaclass="com.wm.util.Values">
         <value name="local/Everybody">local/Everybody</value>
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="DeployerAdmin" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">DeployerAdmin</value>
+      <record name="allow" javaclass="com.wm.util.Values">
+      </record>
+      <record name="deny" javaclass="com.wm.util.Values">
+      </record>
+    </record>
+    <record name="CICDTest" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">CICDTest</value>
+      <record name="allow" javaclass="com.wm.util.Values">
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
       </record>

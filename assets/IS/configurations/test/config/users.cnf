@@ -2,46 +2,74 @@
 
 <Values version="2.0">
   <record name="users" id="1" javaclass="com.wm.util.Values">
-    <record name="Administrator" id="2" javaclass="com.wm.app.b2b.server.User">
-      <value name="name" id="3">Administrator</value>
+    <record name="CICDTestUser1" id="2" javaclass="com.wm.app.b2b.server.User">
+      <value name="name" id="3">CICDTestUser1</value>
       <value name="pass" id="4">(secret)</value>
-      <value name="passHash" id="5">{sha-256_v2}YF7Hj3T74tIrVZVI+D4i5HpoHXvtL169s1YMOKy7lh6PQ2lkWhIRrzAxMDAw</value>
+      <value name="passHash" id="5">{sha-256_v2}+nnGIDfnmz2isHZQZFkBhuRDU5e0UEO9myMIKxgEZDRxwsiNLG4qvjAxMDAw</value>
       <record name="members" id="6" javaclass="com.wm.util.Values">
-        <value name="Replicators" id="7">Replicators</value>
-        <value name="Administrators" id="8">Administrators</value>
-        <value name="Everybody" id="9">Everybody</value>
+        <value name="CICDTestGroup1" id="7">CICDTestGroup1</value>
+        <value name="Everybody" id="8">Everybody</value>
       </record>
-      <value name="enabled" id="10">true</value>
-      <value name="allowDigestAuth" id="11">false</value>
-      <value name="passwordUpdatedOn" id="12">2022-02-28 18:15:48 IST</value>
-      <array name="passwordHistory" type="record" depth="1" id="13">
+      <value name="enabled" id="9">true</value>
+      <value name="allowDigestAuth" id="10">false</value>
+      <value name="passwordUpdatedOn" id="11">2022-04-13 13:52:40 IST</value>
+      <array name="passwordHistory" type="record" depth="1" id="12">
+      </array>
+    </record>
+    <record name="Administrator" id="13" javaclass="com.wm.app.b2b.server.User">
+      <value name="name" id="14">Administrator</value>
+      <object idref="4" name="pass"/>
+      <value name="passHash" id="15">{sha-256_v2}ZJcyuGxlfyoQ3GeCUI3bWoP5YS+9CokNn+VoAs7htd6i5Yw/b7X9zDAxMDAw</value>
+      <record name="members" id="16" javaclass="com.wm.util.Values">
+        <value name="Replicators" id="17">Replicators</value>
+        <value name="Administrators" id="18">Administrators</value>
+        <object idref="8" name="Everybody"/>
+      </record>
+      <object idref="9" name="enabled"/>
+      <object idref="10" name="allowDigestAuth"/>
+      <value name="passwordUpdatedOn" id="19">2021-10-11 02:00:50 IST</value>
+      <array name="passwordHistory" type="record" depth="1" id="20">
+      </array>
+    </record>
+    <record name="CICDTestUser2" id="21" javaclass="com.wm.app.b2b.server.User">
+      <value name="name" id="22">CICDTestUser2</value>
+      <object idref="4" name="pass"/>
+      <value name="passHash" id="23">{sha-256_v2}7chqxPkg+S3LiifMgo1Uj6Z6GjT2Z3Cc7FyZA9LtZ/emR2UDthSUVDAxMDAw</value>
+      <record name="members" id="24" javaclass="com.wm.util.Values">
+        <value name="CICDTestGroup2" id="25">CICDTestGroup2</value>
+        <object idref="8" name="Everybody"/>
+      </record>
+      <object idref="9" name="enabled"/>
+      <object idref="10" name="allowDigestAuth"/>
+      <object idref="11" name="passwordUpdatedOn"/>
+      <array name="passwordHistory" type="record" depth="1" id="26">
       </array>
     </record>
     <record name="Replicator" id="27" javaclass="com.wm.app.b2b.server.User">
       <value name="name" id="28">Replicator</value>
       <object idref="4" name="pass"/>
-      <value name="passHash" id="29">{sha-256_v2}nAyrbwp4MRTOfpMNpprbVizJXQvQj3sfGHMsHOK7uZth/3VPzX3A/jAxMDAw</value>
+      <value name="passHash" id="29">{sha-256_v2}OCSwLymdGGHoM7YSY9NkApqxVUPuApGarv4Al1fOXSjtdyunba88vTAxMDAw</value>
       <record name="members" id="30" javaclass="com.wm.util.Values">
-        <object idref="7" name="Replicators"/>
-        <object idref="9" name="Everybody"/>
+        <object idref="17" name="Replicators"/>
+        <object idref="8" name="Everybody"/>
       </record>
-      <object idref="10" name="enabled"/>
-      <object idref="11" name="allowDigestAuth"/>
-      <object idref="12" name="passwordUpdatedOn"/>
+      <object idref="9" name="enabled"/>
+      <object idref="10" name="allowDigestAuth"/>
+      <object idref="19" name="passwordUpdatedOn"/>
       <array name="passwordHistory" type="record" depth="1" id="31">
       </array>
     </record>
     <record name="Developer" id="32" javaclass="com.wm.app.b2b.server.User">
       <value name="name" id="33">Developer</value>
       <object idref="4" name="pass"/>
-      <value name="passHash" id="34">{sha-256_v2}jcQP1jc4qx0mZ+mizzfvThjC/IYJOqKn0lO+MnJd7ZwPzzx6OgO/hzAxMDAw</value>
+      <value name="passHash" id="34">{sha-256_v2}1jSoXIcV74sxweb7QiLttoihN+kwKn29SocaO4qQZDg9pOaQLcFZ2jAxMDAw</value>
       <record name="members" id="35" javaclass="com.wm.util.Values">
         <value name="Developers" id="36">Developers</value>
-        <object idref="9" name="Everybody"/>
+        <object idref="8" name="Everybody"/>
       </record>
-      <object idref="10" name="enabled"/>
-      <object idref="11" name="allowDigestAuth"/>
-      <object idref="12" name="passwordUpdatedOn"/>
+      <object idref="9" name="enabled"/>
+      <object idref="10" name="allowDigestAuth"/>
+      <object idref="19" name="passwordUpdatedOn"/>
       <array name="passwordHistory" type="record" depth="1" id="37">
       </array>
     </record>
@@ -51,94 +79,87 @@
       <null name="passHash"/>
       <record name="members" id="40" javaclass="com.wm.util.Values">
         <value name="Anonymous" id="41">Anonymous</value>
-        <object idref="9" name="Everybody"/>
+        <object idref="8" name="Everybody"/>
       </record>
-      <object idref="10" name="enabled"/>
-      <object idref="11" name="allowDigestAuth"/>
-      <value name="passwordUpdatedOn" id="42">2022-02-28 18:15:47 IST</value>
-      <array name="passwordHistory" type="record" depth="1" id="43">
+      <object idref="9" name="enabled"/>
+      <object idref="10" name="allowDigestAuth"/>
+      <object idref="19" name="passwordUpdatedOn"/>
+      <array name="passwordHistory" type="record" depth="1" id="42">
       </array>
     </record>
-	<record name="CICDTestUser" id="45" javaclass="com.wm.app.b2b.server.User">
-      <value name="name" id="46">CICDTestUser</value>
-      <object idref="4" name="pass"/>
-      <value name="passHash" id="47">{sha-256_v2}6FgngyU/VxVJKQSHq9ZsNSEAfkSnDIBzSkGszDxUPWtiqq1eF/ScSjAxMDAw</value>
-      <record name="members" id="48" javaclass="com.wm.util.Values">
-        <object idref="15" name="Everybody"/>
-      </record>
-      <object idref="25" name="enabled"/>
-      <object idref="26" name="allowDigestAuth"/>
-      <value name="passwordUpdatedOn" id="49">2022-04-13 13:08:51 IST</value>
-      <array name="passwordHistory" type="record" depth="1" id="50">
-      </array>
-    </record>
-    </record>
-  <record name="groups" id="58" javaclass="com.wm.util.Values">
-    <record name="Replicators" id="61" javaclass="com.wm.app.b2b.server.Group">
-      <object idref="7" name="name"/>
+  </record>
+  <record name="groups" id="43" javaclass="com.wm.util.Values">
+    <record name="CICDTestGroup2" id="44" javaclass="com.wm.app.b2b.server.Group">
+      <object idref="25" name="name"/>
       <object idref="4" name="pass"/>
       <null name="passHash"/>
-      <record name="members" id="62" javaclass="com.wm.util.Values">
-        <object idref="3" name="Administrator"/>
-        <object idref="28" name="Replicator"/>
+      <record name="members" id="45" javaclass="com.wm.util.Values">
+        <object idref="22" name="CICDTestUser2"/>
       </record>
-      <object idref="10" name="enabled"/>
+      <object idref="9" name="enabled"/>
     </record>
-    <record name="Developers" id="63" javaclass="com.wm.app.b2b.server.Group">
-      <object idref="36" name="name"/>
-      <object idref="4" name="pass"/>
-      <null name="passHash"/>
-      <record name="members" id="64" javaclass="com.wm.util.Values">
-        <object idref="33" name="Developer"/>
-      </record>
-      <object idref="10" name="enabled"/>
-    </record>
-     <record name="CICDTestGroup" id="74" javaclass="com.wm.app.b2b.server.Group">
+    <record name="Replicators" id="46" javaclass="com.wm.app.b2b.server.Group">
       <object idref="17" name="name"/>
       <object idref="4" name="pass"/>
       <null name="passHash"/>
-      <record name="members" id="75" javaclass="com.wm.util.Values">
-        <object idref="3" name="Administrator"/>
+      <record name="members" id="47" javaclass="com.wm.util.Values">
+        <object idref="14" name="Administrator"/>
+        <object idref="28" name="Replicator"/>
       </record>
-      <object idref="25" name="enabled"/>
+      <object idref="9" name="enabled"/>
     </record>
-    <record name="Administrators" id="69" javaclass="com.wm.app.b2b.server.Group">
-      <object idref="8" name="name"/>
+    <record name="Developers" id="48" javaclass="com.wm.app.b2b.server.Group">
+      <object idref="36" name="name"/>
       <object idref="4" name="pass"/>
       <null name="passHash"/>
-      <record name="members" id="70" javaclass="com.wm.util.Values">
-        <object idref="3" name="Administrator"/>
-        <object idref="15" name="mahender"/>
+      <record name="members" id="49" javaclass="com.wm.util.Values">
+        <object idref="33" name="Developer"/>
       </record>
-      <object idref="10" name="enabled"/>
+      <object idref="9" name="enabled"/>
     </record>
-    <record name="Anonymous" id="71" javaclass="com.wm.app.b2b.server.Group">
+    <record name="CICDTestGroup1" id="50" javaclass="com.wm.app.b2b.server.Group">
+      <object idref="7" name="name"/>
+      <object idref="4" name="pass"/>
+      <null name="passHash"/>
+      <record name="members" id="51" javaclass="com.wm.util.Values">
+        <object idref="3" name="CICDTestUser1"/>
+      </record>
+      <object idref="9" name="enabled"/>
+    </record>
+    <record name="Administrators" id="52" javaclass="com.wm.app.b2b.server.Group">
+      <object idref="18" name="name"/>
+      <object idref="4" name="pass"/>
+      <null name="passHash"/>
+      <record name="members" id="53" javaclass="com.wm.util.Values">
+        <object idref="14" name="Administrator"/>
+      </record>
+      <object idref="9" name="enabled"/>
+    </record>
+    <record name="Anonymous" id="54" javaclass="com.wm.app.b2b.server.Group">
       <object idref="41" name="name"/>
       <object idref="4" name="pass"/>
       <null name="passHash"/>
-      <record name="members" id="72" javaclass="com.wm.util.Values">
+      <record name="members" id="55" javaclass="com.wm.util.Values">
         <object idref="39" name="Default"/>
       </record>
-      <object idref="10" name="enabled"/>
+      <object idref="9" name="enabled"/>
     </record>
-    <record name="Everybody" id="73" javaclass="com.wm.app.b2b.server.Group">
-      <object idref="9" name="name"/>
+    <record name="Everybody" id="56" javaclass="com.wm.app.b2b.server.Group">
+      <object idref="8" name="name"/>
       <object idref="4" name="pass"/>
       <null name="passHash"/>
-      <record name="members" id="74" javaclass="com.wm.util.Values">
-        <object idref="3" name="Administrator"/>
-        <object idref="15" name="mahender"/>
-        <object idref="22" name="testCICD"/>
+      <record name="members" id="57" javaclass="com.wm.util.Values">
+        <object idref="3" name="CICDTestUser1"/>
+        <object idref="14" name="Administrator"/>
+        <object idref="22" name="CICDTestUser2"/>
         <object idref="28" name="Replicator"/>
         <object idref="33" name="Developer"/>
         <object idref="39" name="Default"/>
-        <object idref="45" name="mahender2"/>
-        <object idref="52" name="mahender1"/>
       </record>
-      <object idref="10" name="enabled"/>
+      <object idref="9" name="enabled"/>
     </record>
   </record>
-  <object idref="73" name="allusers"/>
-  <object idref="2" name="adminUser"/>
+  <object idref="56" name="allusers"/>
+  <object idref="13" name="adminUser"/>
   <object idref="38" name="defUser"/>
 </Values>
