@@ -12,46 +12,11 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="~DEPLOY~testACLDeployment" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEPLOY~testACLDeployment</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~VIEW~testCICDNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~VIEW~testCICDNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~VIEW~ccv" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~VIEW~ccv</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
     <record name="Internal" javaclass="com.wm.app.b2b.server.ACLGroup">
       <value name="name">Internal</value>
       <record name="allow" javaclass="com.wm.util.Values">
         <value name="local/Administrators">local/Administrators</value>
         <value name="local/Developers">local/Developers</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~MAP~testCICDNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~MAP~testCICDNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~VIEW~tt" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~VIEW~tt</value>
-      <record name="allow" javaclass="com.wm.util.Values">
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
@@ -64,51 +29,6 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="cicdTestNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">cicdTestNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-        <value name="local/cicdGroup">local/cicdGroup</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="cicdacl2" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">cicdacl2</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-        <value name="local/cicdgrp2">local/cicdgrp2</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="cicdacl1" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">cicdacl1</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-        <value name="local/cicdgrp1">local/cicdgrp1</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEFINE~ccv" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEFINE~ccv</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~EXTRACT~testCICDNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~EXTRACT~testCICDNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEPLOY~jndicicd" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEPLOY~jndicicd</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
     <record name="DeployerAdmin" javaclass="com.wm.app.b2b.server.ACLGroup">
       <value name="name">DeployerAdmin</value>
       <record name="allow" javaclass="com.wm.util.Values">
@@ -116,64 +36,8 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="~EXTRACT~jndicicd" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~EXTRACT~jndicicd</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~EXTRACT~testACLDeployment" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~EXTRACT~testACLDeployment</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~VIEW~testACLDeployment" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~VIEW~testACLDeployment</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEFINE~tt" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEFINE~tt</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEPLOY~tt" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEPLOY~tt</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEPLOY~ccv" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEPLOY~ccv</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEFINE~testACLDeployment" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEFINE~testACLDeployment</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~MAP~testACLDeployment" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~MAP~testACLDeployment</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~VIEW~jndicicd" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~VIEW~jndicicd</value>
+    <record name="CICDTest" javaclass="com.wm.app.b2b.server.ACLGroup">
+      <value name="name">CICDTest</value>
       <record name="allow" javaclass="com.wm.util.Values">
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
@@ -188,34 +52,6 @@
         <value name="local/Anonymous">local/Anonymous</value>
       </record>
     </record>
-    <record name="~MAP~tt" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~MAP~tt</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~EXTRACT~ccv" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~EXTRACT~ccv</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEFINE~jndicicd" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEFINE~jndicicd</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEFINE~testCICDNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEFINE~testCICDNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
     <record name="Developers" javaclass="com.wm.app.b2b.server.ACLGroup">
       <value name="name">Developers</value>
       <record name="allow" javaclass="com.wm.util.Values">
@@ -225,38 +61,10 @@
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
     </record>
-    <record name="~MAP~jndicicd" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~MAP~jndicicd</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~MAP~ccv" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~MAP~ccv</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
     <record name="Administrators" javaclass="com.wm.app.b2b.server.ACLGroup">
       <value name="name">Administrators</value>
       <record name="allow" javaclass="com.wm.util.Values">
         <value name="local/Administrators">local/Administrators</value>
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~EXTRACT~tt" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~EXTRACT~tt</value>
-      <record name="allow" javaclass="com.wm.util.Values">
-      </record>
-      <record name="deny" javaclass="com.wm.util.Values">
-      </record>
-    </record>
-    <record name="~DEPLOY~testCICDNew" javaclass="com.wm.app.b2b.server.ACLGroup">
-      <value name="name">~DEPLOY~testCICDNew</value>
-      <record name="allow" javaclass="com.wm.util.Values">
       </record>
       <record name="deny" javaclass="com.wm.util.Values">
       </record>
