@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="listeners" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming" javaclass="com.wm.util.Values">
+      <value name="port">C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming</value>
+      <value name="protocol">FilePolling</value>
+      <value name="pkg">IntegrationDemo</value>
+      <value name="enabled">true</value>
+      <value name="key">FilePollingListener:C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming</value>
+      <value name="portAlias">ISDemoFilePolling</value>
+      <value name="portDescription">IS Demo File Polling</value>
+      <value name="factoryKey">webMethods/FilePolling</value>
+      <value name="configURL">/WmFlatFile/configFilePolling.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="monitorDir">C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming</value>
+      <value name="defaultContentType">json</value>
+      <value name="recursive">yes</value>
+      <value name="clusterEnabled">no</value>
+      <value name="cleanupAtStartup">yes</value>
+      <value name="runUser">Administrator</value>
+      <value name="processingService">IntegrationDemo.usecases.FTPFileRead:readFileCreateOrder</value>
+      <value name="filePollingInterval">10</value>
+      <value name="logMinMessage">no</value>
+      <value name="NFSDirectories">no</value>
+      <value name="cleanUpFileAge">7</value>
+      <value name="cleanUpInterval">24</value>
+      <value name="maxThreads">1</value>
+      <value name="maxFilesPerCycle">1</value>
+      <value name="lockFileExtension">.lock</value>
+    </record>
+  </record>
+  <record name="access" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">FilePollingListener:C:\Users\Public\Desktop\demo_config_IS\FilePort\incoming</value>
+    </record>
+  </record>
+</Values>
