@@ -13,7 +13,7 @@ pipeline {
 		stage('ISCCR-Code Review') {
             steps {
 			echo "ISCCR static code review"		 
-			 bat "call C:/SAGInstallations/isccr/CodeReview.cmd -Dcode.review.directory=${env.WORKSPACE}/assets/IS/Packages -Dcode.review.runmode=MULTI -Dcode.review.pkgprefix=MediaApp,Fibo,Dev -Dcode.review.folder-prefix=MediaApp,Fibo,Dev"		
+			 //bat "call C:/SAGInstallations/isccr/CodeReview.cmd -Dcode.review.directory=${env.WORKSPACE}/assets/IS/Packages -Dcode.review.runmode=MULTI -Dcode.review.pkgprefix=MediaApp,Fibo,Dev -Dcode.review.folder-prefix=MediaApp,Fibo,Dev"		
             }
 		}
         stage('Deploy') {

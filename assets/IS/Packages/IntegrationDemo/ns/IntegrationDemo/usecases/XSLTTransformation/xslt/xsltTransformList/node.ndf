@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Values version="2.0">
-  <value name="modifiable">false</value>
-  <value name="originURI">file:///C:\Users\y508844\Desktop\XMLs\cdlist.xsl</value>
-  <value name="node_nsName">IntegrationDemo.usecases.XSLTTransformation.xslt:xsltTransformList</value>
-  <value name="node_pkg">IntegrationDemo</value>
-  <value name="node_type">xsltservice</value>
-</Values>
