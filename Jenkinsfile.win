@@ -24,17 +24,17 @@ pipeline {
             }
         }
 	stage('Wait for Approval') {
-		timeout(time: 1, unit: "MINUTES") {
-	            input {
-	                message "Do you want to approve the deployment?"
-	                ok "Proceed to Deploy"			
-	                parameters {
-	                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
-	                }
-	            }
-	            steps {
-	                echo "Approval process completed with comments as: ${APPROVALCOMMENTS}."
-	            }
+		 steps {
+			timeout(time: 1, unit: "MINUTES") {
+		            input {
+		                message "Do you want to approve the deployment?"
+		                ok "Proceed to Deploy"			
+		                parameters {
+		                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
+		                }
+		            }
+			}
+		        echo "Approval process completed with comments as: ${APPROVALCOMMENTS}."
 		}
 	}
 		stage('ISCCR-Code Review') {
