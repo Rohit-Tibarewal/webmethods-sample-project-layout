@@ -7,7 +7,7 @@ pipeline {
         stage('Build'){
             steps {
                 echo "BUILD with JAVA_HOME as ${env.JAVA_HOME}" 
-			bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
+			bat "${env.SAG_HOME}/common/lib/ant/bin/ant -verbose -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
 	stage('Approval Process') {
@@ -15,7 +15,7 @@ pipeline {
 		echo "Send approval email"
 		emailext body: ${DEFAULT_CONTENT} ,
 		subject: ${DEFAULT_SUBJECT} ,
-		to: rohit.tibarewal@softwareag.com 
+		to: 'rohit.tibarewal@softwareag.com'
             }
         }
 		stage('ISCCR-Code Review') {
