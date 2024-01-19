@@ -10,6 +10,19 @@ pipeline {
 			bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
+	stage('Approval Process') {
+            input {
+                message "Continue with Deployment to Target Env?"
+                ok "Yes"
+                submitter "Rohit,Tib"
+                parameters {
+                    string(name: 'PERSON', defaultValue: 'Rohit', description: 'Ok to continue?')
+                }
+            }
+            steps {
+                echo "Hello, ${PERSON}, you chose to continue."
+            }
+        }
 		stage('ISCCR-Code Review') {
             steps {
 			echo "ISCCR static code review"		 
