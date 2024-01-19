@@ -17,9 +17,8 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		echo "Send approval email to ${EMAIL_TO} subject as ${EMAIL_SUB}"
-		emailext body: '${env.PROJECT_URL} ${env.BUILD_URL} ${env.JOB_URL}',
-		subject: 'Approval required for project ${PROJECT_NAME} with Build Number # ${env.BUILD_NUMBER} ${env.PROJECT_URL}',
+		emailext body: '${FILE, path="$WORKSPACE/LICENSE"}',
+		subject: "${currentBuild.currentResult}: ${env.JOB_NAME} - build ${currentBuild.number}",
 		to: 'rohit.tibarewal@softwareag.com'
             }
         }
