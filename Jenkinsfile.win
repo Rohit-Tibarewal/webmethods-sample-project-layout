@@ -19,7 +19,7 @@ pipeline {
 		echo "Send approval email"
 		emailext body: '${FILE,path="LICENSE"}',
 		subject: 'Approval required for project',
-		to: 'rohit.tibarewal@softwareag.com'
+		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com'
             }
         }
