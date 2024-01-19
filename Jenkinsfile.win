@@ -17,9 +17,10 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		emailext body: 'Test Message',
-		subject: 'Subject',
+		emailext body: '${FILE,path="LICENSE"}',
+		subject: 'Approval required for project',
 		to: 'rohit.tibarewal@softwareag.com'
+		from: 'jenkinsops@jen.com'
             }
         }
 		stage('ISCCR-Code Review') {
