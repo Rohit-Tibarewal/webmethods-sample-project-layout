@@ -13,8 +13,9 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		emailext body: '',
-		subject: '' 
+		emailext body: $DEFAULT_CONTENT ,
+		subject: $DEFAULT_SUBJECT ,
+		to: $DEFAULT_RECIPIENTS 
             }
         }
 		stage('ISCCR-Code Review') {
