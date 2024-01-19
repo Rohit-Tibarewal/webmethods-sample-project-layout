@@ -20,7 +20,7 @@ pipeline {
             steps {
 		echo "Send approval email and wait for reply"
 		emailext (subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} with Build Number # ${BUILD_NUMBER}',
-		body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${BUILD_URL}input',		
+		body: 'Kindly review and approve the deployment of ${PROJECT_DISPLAY_NAME} at ${BUILD_URL}input',		
 		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com')
             }
@@ -32,14 +32,14 @@ pipeline {
 	        message "Do you want to approve the deployment?"
 	        ok "Proceed to Deploy"
 	        parameters {
-	          string(defaultValue: 'Rohit', name: 'FIRST_NAME', trim: true) 
-	        }
+                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
+                }
 	      }
 	      options {
-	        timeout(time: 30, unit: 'SECONDS') 
+	        timeout(time: 120, unit: 'SECONDS') 
 	      }
 	      steps {
-	        echo "Hi $FIRST_NAME"
+	        echo "approval comments as: $APPROVALCOMMENTS"
 	      }
 	    }
 
