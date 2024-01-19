@@ -21,11 +21,21 @@ pipeline {
 		body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${BUILD_URL}input',		
 		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com'
-		input {	message "Do you want to approve the deployment?"
-			ok "Proceed to Deploy"			
-			}
             }
         }
+	stage('Wait for Approval') {
+            input {
+                message "Do you want to approve the deployment?"
+                ok "Proceed to Deploy"			
+                submitter "Rohit"
+                parameters {
+                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
+                }
+            }
+            steps {
+                echo "Approval process completed with comments as ${APPROVALCOMMENTS}."
+            }
+
 		stage('ISCCR-Code Review') {
             steps {
 			echo "ISCCR static code review"		 
