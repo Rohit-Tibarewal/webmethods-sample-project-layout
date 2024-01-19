@@ -13,7 +13,8 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		emailext body: 'Test Message'
+		emailext body: ,
+		subject: 
             }
         }
 		stage('ISCCR-Code Review') {
