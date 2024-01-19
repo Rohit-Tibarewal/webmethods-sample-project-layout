@@ -4,7 +4,7 @@ pipeline {
         ANT_HOME="${env.SAG_HOME}/common/lib/ant"
 	EMAIL_BODY='${DEFAULT_CONTENT}'
 	EMAIL_SUB='${DEFAULT_SUBJECT}'
-	EMAIL_TO='${DEFAULT_RECIPIENTS} '
+	EMAIL_TO='rohit.tibarewal@softwareag.com'
 
     }
     stages {
@@ -20,7 +20,7 @@ pipeline {
 		echo "Send approval email to ${EMAIL_TO} subject as ${EMAIL_SUB}"
 		emailext body: "${EMAIL_BODY}",
 		subject: "${EMAIL_SUB}" ,
-		to: "${EMAIL_SUB}"
+		to: "${EMAIL_TO}"
             }
         }
 		stage('ISCCR-Code Review') {
