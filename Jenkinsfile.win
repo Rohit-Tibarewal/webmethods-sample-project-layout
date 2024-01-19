@@ -22,11 +22,11 @@ pipeline {
 		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com')
 		input {
-				message: 'Do you want to approve the deployment?', 
-				ok: 'Proceed to Deploy'
-				parameters {
-                   			 string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
-               		 	}
+			message "Do you want to approve the deployment?"
+			ok "Proceed to Deploy"
+			parameters {
+				 string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
+			}
 			}
 		echo "Approval process completed with comments as ${APPROVALCOMMENTS}"
 
