@@ -2,9 +2,9 @@ pipeline {
     agent any 
   environment {
         ANT_HOME="${env.SAG_HOME}/common/lib/ant"
-	EMAIL_SUB="Approval required for project ${env.PROJECT_NAME} with Build Number # ${env.BUILD_NUMBER} ${env.PROJECT_URL}"
+	EMAIL_SUB="Approval required for project ${PROJECT_NAME} with Build Number # ${env.BUILD_NUMBER} ${env.PROJECT_URL}"
 	EMAIL_BODY="${env.PROJECT_URL} ${env.BUILD_URL} ${env.JOB_URL}"
-	EMAIL_TO='rohit.tibarewal@softwareag.com'
+	EMAIL_TO="rohit.tibarewal@softwareag.com"
 
     }
     stages {
@@ -19,8 +19,8 @@ pipeline {
 		echo "Send approval email"
 		echo "Send approval email to ${EMAIL_TO} subject as ${EMAIL_SUB}"
 		emailext body: '${EMAIL_BODY}',
-		subject: '${EMAIL_SUB}',
-		to: '${EMAIL_TO}'
+		subject: "${EMAIL_SUB}",
+		to: "${EMAIL_TO}"
             }
         }
 		stage('ISCCR-Code Review') {
