@@ -25,16 +25,24 @@ pipeline {
 		from: 'jenkinsops@jen.com')
             }
         }
+
 	stage('Wait for Approval') {
-	agent any 
- steps {
-		 timeout(time: 1, unit: 'MINUTES'){	
-			input message: "Do you want to approve the deployment?", ok: "Proceed to Deploy"
-			
-		}
-}
-		
-	}
+	      agent any
+	      input {
+	        message "Do you want to approve the deployment?"
+	        ok "Proceed to Deploy"
+	        parameters {
+	          string(defaultValue: 'Rohit', name: 'FIRST_NAME', trim: true) 
+	        }
+	      }
+	      options {
+	        timeout(time: 30, unit: 'SECONDS') 
+	      }
+	      steps {
+	        echo "Hi $FIRST_NAME"
+	      }
+	    }
+
 		stage('ISCCR-Code Review') {
 		agent any 
             steps {
