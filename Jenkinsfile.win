@@ -18,7 +18,7 @@ pipeline {
             steps {
 		echo "Send approval email"
 		emailext body: 'Test Message',
-		subject: '${currentBuild.currentResult}: ${env.JOB_NAME} - build ${currentBuild.number}',
+		subject: 'Subject',
 		to: 'rohit.tibarewal@softwareag.com'
             }
         }
