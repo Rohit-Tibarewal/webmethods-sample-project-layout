@@ -26,11 +26,7 @@ pipeline {
 	stage('Wait for Approval') {
  steps {
 		 timeout(time: 1, unit: 'MINUTES'){	
-			input message: "Do you want to approve the deployment?",
-		                ok: "Proceed to Deploy",			
-		                parameters {
-		                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
-		                }
+			input message: "Do you want to approve the deployment?", ok: "Proceed to Deploy"
 			
 		}
 }
