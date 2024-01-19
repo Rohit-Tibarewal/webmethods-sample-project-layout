@@ -17,8 +17,8 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		emailext body: '${FILE,path="LICENSE"}',
-		subject: 'Approval required for project',
+		emailext body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${GIT_BRANCH} and ${FILE,path="LICENSE"}',
+		subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} and ${PROJECT_NAME} with Build Number # ${BUILD_NUMBER}',
 		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com'
             }
