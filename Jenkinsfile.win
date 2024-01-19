@@ -24,15 +24,19 @@ pipeline {
             }
         }
 	stage('Wait for Approval') {
-		            timeout(time: 15, unit: "MINUTES") {
-input {
+		options {
+	                // Timeout counter starts BEFORE agent is allocated
+	                timeout(time: 1, unit: 'MINUTES')
+	            }
+		
+			input {
 		                message "Do you want to approve the deployment?"
 		                ok "Proceed to Deploy"			
 		                parameters {
 		                    string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
 		                }
 			}
-}
+
 		 steps {
 
 		        echo "Approval process completed with comments as: ${APPROVALCOMMENTS}."
