@@ -2,16 +2,16 @@ pipeline {
     agent any 
   environment {
         ANT_HOME="${env.SAG_HOME}/common/lib/ant"
-	EMAIL_BODY="${DEFAULT_CONTENT}"
-	EMAIL_SUB="${DEFAULT_SUBJECT}"
-	EMAIL_TO="${DEFAULT_RECIPIENTS}"
+	EMAIL_BODY='${DEFAULT_CONTENT}'
+	EMAIL_SUB='${DEFAULT_SUBJECT}'
+	EMAIL_TO='${DEFAULT_RECIPIENTS} '
 
     }
     stages {
         stage('Build'){
             steps {
                 echo "BUILD with JAVA_HOME as ${env.JAVA_HOME}" 
-			bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
+			//bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
 	stage('Approval Process') {
