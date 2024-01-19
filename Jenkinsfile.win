@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent none 
   environment {
         ANT_HOME="${env.SAG_HOME}/common/lib/ant"
 	EMAIL_SUB="Approval required for project ${PROJECT_NAME} with Build Number # ${env.BUILD_NUMBER} ${env.PROJECT_URL}"
@@ -9,12 +9,14 @@ pipeline {
     }
     stages {
         stage('Build'){
+	agent any 
             steps {
                 echo "BUILD with JAVA_HOME as ${env.JAVA_HOME}" 
 			//bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
 	stage('Trigger Approval Process') {
+	agent any 
             steps {
 		echo "Send approval email and wait for reply"
 		emailext (subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} with Build Number # ${BUILD_NUMBER}',
@@ -24,6 +26,7 @@ pipeline {
             }
         }
 	stage('Wait for Approval') {
+	agent any 
  steps {
 		 timeout(time: 1, unit: 'MINUTES'){	
 			input message: "Do you want to approve the deployment?", ok: "Proceed to Deploy"
@@ -33,12 +36,14 @@ pipeline {
 		
 	}
 		stage('ISCCR-Code Review') {
+		agent any 
             steps {
 			echo "ISCCR static code review"		 
 			 //bat "call C:/SAGInstallations/isccr/CodeReview.cmd -Dcode.review.directory=${env.WORKSPACE}/assets/IS/Packages -Dcode.review.runmode=MULTI -Dcode.review.pkgprefix=MediaApp,Fibo,Dev -Dcode.review.folder-prefix=MediaApp,Fibo,Dev"		
             }
 		}
         stage('Deploy') {
+	agent any 
             steps {
 			echo "DEPLOY"
 			 
@@ -47,6 +52,7 @@ pipeline {
             }
         }
  	stage('Test') {
+	agent any 
             steps {
 		echo "TESTING with ANT_HOME as ${env.ANT_HOME} and JOB_NAME as ${env.JOB_NAME} " 
 		//bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} test"
