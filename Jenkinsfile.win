@@ -24,7 +24,7 @@ pipeline {
             }
         }
 	stage('Wait for Approval') {
-
+ steps {
 		 timeout(time: 1, unit: 'MINUTES'){	input {
 		                message "Do you want to approve the deployment?"
 		                ok "Proceed to Deploy"			
@@ -33,7 +33,7 @@ pipeline {
 		                }
 			}
 		}
-
+}
 		
 	}
 		stage('ISCCR-Code Review') {
