@@ -16,7 +16,7 @@ pipeline {
 		emailext  mimeType: 'text/html',
  		subject: "APPROVAL RQD[JENKINS] ${currentBuild.fullDisplayName}",
 		to: "roti@softwareag.com",
-		body: ‘’’<a href=”${BUILD_URL}input”>click to approve</a>’’’
+		body: "<a href="${BUILD_URL}input">click to approve</a>"
                 
             }
         }
