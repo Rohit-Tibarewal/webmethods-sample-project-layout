@@ -14,13 +14,24 @@ pipeline {
 			//bat "${env.SAG_HOME}/common/lib/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} build" 	
             }
         }
-	stage('Approval Process') {
+	stage('Trigger Approval Process') {
             steps {
-		echo "Send approval email"
-		emailext body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${GIT_BRANCH} and ${FILE,path="LICENSE"}',
-		subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} and ${PROJECT_NAME} with Build Number # ${BUILD_NUMBER}',
+		echo "Send approval email and wait for reply"
+		emailext (subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} with Build Number # ${BUILD_NUMBER}',
+		body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${BUILD_URL}input',		
 		to: 'rohit.tibarewal@softwareag.com',
 		from: 'jenkinsops@jen.com'
+
+		timeout(time: 1, unit: "MINUTES") {
+			input {
+				message: 'Do you want to approve the deployment?', 
+				ok: 'Proceed to Deploy'
+				parameters {
+                   			 string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
+               		 	}
+			}
+		echo "Approval process completed with comments as ${APPROVALCOMMENTS}"
+		}
             }
         }
 		stage('ISCCR-Code Review') {
