@@ -14,9 +14,8 @@ pipeline {
             steps {
 		echo "Send approval email"
 		emailext 
- 		subject: 'APPROVAL RQD[JENKINS] ${currentBuild.fullDisplayName}',
-		to: 'roti@softwareag.com',
-		body: '<a href="${BUILD_URL}input">click to approve</a>'                
+ 		subject: 'APPROVAL RQD for JENKINS job',
+		to: 'roti@softwareag.com'
             }
         }
 		stage('ISCCR-Code Review') {
