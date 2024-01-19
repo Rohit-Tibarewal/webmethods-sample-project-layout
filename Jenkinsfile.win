@@ -18,9 +18,9 @@ pipeline {
             steps {
 		echo "Send approval email"
 		echo "Send approval email to ${EMAIL_TO} subject as ${EMAIL_SUB}"
-		emailext body: '${EMAIL_BODY}',
-		subject: "${EMAIL_SUB}",
-		to: "${EMAIL_TO}"
+		emailext body: '${env.PROJECT_URL} ${env.BUILD_URL} ${env.JOB_URL}',
+		subject: 'Approval required for project ${PROJECT_NAME} with Build Number # ${env.BUILD_NUMBER} ${env.PROJECT_URL}',
+		to: 'rohit.tibarewal@softwareag.com'
             }
         }
 		stage('ISCCR-Code Review') {
