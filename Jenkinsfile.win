@@ -17,16 +17,13 @@ pipeline {
 	stage('Trigger Approval Process') {
             steps {
 		echo "Send approval email and wait for reply"
-		emailext (subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} with Build Number # ${BUILD_NUMBER}',
+		emailext subject: 'Approval required for project ${PROJECT_DISPLAY_NAME} with Build Number # ${BUILD_NUMBER}',
 		body: 'display name ${PROJECT_DISPLAY_NAME} project url  ${PROJECT_URL} jenkins url ${JENKINS_URL} from git branch ${BUILD_URL}input',		
 		to: 'rohit.tibarewal@softwareag.com',
-		from: 'jenkinsops@jen.com')
+		from: 'jenkinsops@jen.com'
 		input {
 			message "Do you want to approve the deployment?"
-			ok "Proceed to Deploy"
-			parameters {
-				 string(name: 'APPROVALCOMMENTS', defaultValue: 'Approved', description: 'Approval Comments?')
-			}
+			ok "Proceed to Deploy"			
 			}
 		echo "Approval process completed with comments as ${APPROVALCOMMENTS}"
 
