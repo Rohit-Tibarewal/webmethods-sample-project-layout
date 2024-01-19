@@ -13,9 +13,9 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		emailext  mimeType: ‘text/html’,
- 		subject: “APPROVAL RQD[JENKINS] ${currentBuild.fullDisplayName}”,
-		to: “roti@softwareag.com “,
+		emailext  mimeType: 'text/html',
+ 		subject: "APPROVAL RQD[JENKINS] ${currentBuild.fullDisplayName}",
+		to: "roti@softwareag.com",
 		body: ‘’’<a href=”${BUILD_URL}input”>click to approve</a>’’’
                 
             }
