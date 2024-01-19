@@ -2,6 +2,10 @@ pipeline {
     agent any 
   environment {
         ANT_HOME="${env.SAG_HOME}/common/lib/ant"
+	EMAIL_BODY="${DEFAULT_CONTENT}"
+	EMAIL_SUB="${DEFAULT_SUBJECT}"
+	EMAIL_TO="${DEFAULT_RECIPIENTS}"
+
     }
     stages {
         stage('Build'){
@@ -13,9 +17,6 @@ pipeline {
 	stage('Approval Process') {
             steps {
 		echo "Send approval email"
-		EMAIL_BODY='${DEFAULT_CONTENT}'
-		EMAIL_SUB='${DEFAULT_SUBJECT}'
-		EMAIL_TO="${DEFAULT_RECIPIENTS}"
 		echo "Send approval email to ${EMAIL_TO} subject as ${EMAIL_SUB}"
 		emailext body: "${EMAIL_BODY}",
 		subject: "${EMAIL_SUB}" ,
