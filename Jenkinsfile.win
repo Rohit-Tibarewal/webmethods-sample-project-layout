@@ -32,8 +32,10 @@ pipeline {
 		                }
 			}
 		 steps {
+timeout(time: 15, unit: "MINUTES") {
 		        echo "Approval process completed with comments as: ${APPROVALCOMMENTS}."
 		}
+}
 	}
 		stage('ISCCR-Code Review') {
             steps {
