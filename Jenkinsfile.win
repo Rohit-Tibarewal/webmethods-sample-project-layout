@@ -11,16 +11,13 @@ pipeline {
             }
         }
 	stage('Approval Process') {
-            input {
-                message "Continue with Deployment to Target Env?"
-                ok "Yes"
-                submitter "Rohit,Tib"
-                parameters {
-                    string(name: 'PERSON', defaultValue: 'Rohit', description: 'Ok to continue?')
-                }
-            }
             steps {
-                echo "Hello, ${PERSON}, you chose to continue."
+		echo "Send approval email"
+		emailext  mimeType: ‘text/html’,
+ 		subject: “APPROVAL RQD[JENKINS] ${currentBuild.fullDisplayName}”,
+		to: “roti@softwareag.com “,
+		body: ‘’’<a href=”${BUILD_URL}input”>click to approve</a>’’’
+                
             }
         }
 		stage('ISCCR-Code Review') {
