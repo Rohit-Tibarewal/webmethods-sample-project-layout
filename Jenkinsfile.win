@@ -27,7 +27,6 @@ pipeline {
         }
 
 	stage('Wait for Approval') {
-	      agent any
 	      input {
 	        message "Do you want to approve the deployment?"
 	        ok "Proceed to Deploy"
